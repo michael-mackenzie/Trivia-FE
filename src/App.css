@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+body {
+  background-image: url(./images/backgroundYellow.png);
+  background-size: cover;
+  color: #12393B;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.play {
+  background-image: url(./images/backgroundBlue.png);
+  background-size: cover;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.emailInput {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #12393B;
+  border-color: #12393B;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cardMain {
+  padding: 1rem 1.6rem;
+  line-height: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cardTitle {
+  padding: 0rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #F8BC37;
+  border-color: #F7AE0E;
+  border-width: 2px;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  color: #FFFFFF;
+  background-color: #F7AE0E;
+  border-color: #F7AE0E;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #FBDB93;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: #E87F58;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .nav-link {
+  color: #47B0B4;
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: #9DBEC0;
+}
+
+.footer {
+  color: #12393B;
+}
+
+/*Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 1.4rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  /*1rem = 16px*/
+  h2 {
+    font-size: 1.2rem;
   }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  /*1rem = 16px*/
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+  .cardMain {
+    padding: 1.5rem 2.4rem;/*1rem = 16px*/
+  }
+  .cardTitle {
+    padding: 1.5rem;
+  }
+  /*1rem = 16px*/
 }

@@ -1,0 +1,11 @@
+.cardHomePages {
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+
+  .cardHomePages {
+    padding: 2.5rem;
+  }
+  /*1rem = 16px*/
+}

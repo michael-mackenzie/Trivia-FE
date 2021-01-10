@@ -1,0 +1,66 @@
+body {
+  /*background-image: url(./images/backgroundBlue.png);*/
+  background-size: cover;
+}
+
+.questionTitle {
+  align-items: flex-start;
+}
+
+.disableHover {
+  pointer-events: none;
+}
+
+.questionAnswer {
+  color: #EDA608;
+  background-color: white;
+  border-color: #F7AE0E;
+  border-width: 2px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.answerRight {
+  color: white;
+  background-color: #4F8B37;
+  border-color: #4F8B37;
+  border-width: 2px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.answerWrong {
+  color: white;
+  background-color: #B74848;
+  border-color: #B74848;
+  border-width: 2px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.answersRevealedRight {
+  color: #4F8B37;
+  background-color: white;
+  border-color: #4F8B37;
+  border-width: 2px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.answersRevealedWrong {
+  color: #B74848;
+  background-color: white;
+  border-color: #B74848;
+  border-width: 2px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .questionAnswer {
+    font-size: 1.25rem;
+  }
+
+}
