@@ -9,8 +9,8 @@ function Home() {
   const [isNotEmail, setIsNotEmail] = useState(false);
 
   useEffect(() => {
-    var email = localStorage.getItem('userEmail');
-    if(email === 'test') {
+    var emailVal = localStorage.getItem('userEmail');
+    if(emailVal === 'test' || emailVal === null) {
       setHasEmail(false);
     } else {
       setHasEmail(true);
