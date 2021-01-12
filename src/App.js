@@ -1,5 +1,4 @@
 import { Switch, Route, NavLink, useLocation } from "react-router-dom";
-import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Home.css';
 import './App.css';
@@ -34,7 +33,9 @@ function App() {
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <a className="navbar-brand" href={"/home"}>Company Name</a>
+            <NavLink to={"/home"} exact activeClassName="active" className="navbar-brand" aria-current="page">
+              Food Fighters GTA
+            </NavLink>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
