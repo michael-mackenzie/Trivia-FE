@@ -2,8 +2,9 @@ import { Switch, Route, NavLink, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Home.css';
 import './App.css';
-
 import './Question.css';
+
+import logo from './fflogo.png';
 
 import Home from "./components/home.component";
 import Play from "./components/play.component";
@@ -33,9 +34,7 @@ function App() {
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <NavLink to={"/home"} exact activeClassName="active" className="navbar-brand" aria-current="page">
-              Food Fighters GTA
-            </NavLink>
+            <img src={logo} alt="logo" className="logo"></img>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
